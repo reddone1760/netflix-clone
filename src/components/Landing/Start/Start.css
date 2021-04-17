@@ -1,0 +1,39 @@
+.start_section {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 2em;
+
+  display: flex;
+}
+
+.inputField {
+  flex: 1;
+  border: none;
+  outline-width: 0;
+  padding: 1.5em 1em;
+}
+
+.button {
+  background-color: #dd0611;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  cursor: pointer;
+  outline-width: 0;
+  max-width: 200px;
+}
+
+@media only screen and (max-width: 740px) {
+  .start_section {
+    flex-direction: column;
+  }
+
+  .button {
+    margin: 1em auto 2em;
+  }
+}

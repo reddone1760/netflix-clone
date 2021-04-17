@@ -1,0 +1,89 @@
+.Login__Screen {
+  max-width: 300px;
+  padding: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.Login__Screen > form > h1 {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.Login__Screen > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Login__Screen > form > h4 {
+  text-align: left;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.Login__Screen > form > h3 {
+  text-align: left;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.login__Screen__grey {
+  color: grey;
+}
+
+.Login__Screen > form > input {
+  outline-width: 0;
+  height: 40px;
+  margin-bottom: 14px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 15px;
+}
+
+.planRadio {
+  justify-content: space-between;
+  display: flex;
+  margin-left: -20px;
+  margin-bottom: 16px;
+}
+
+.planRadio__title {
+  margin-left: 20px;
+}
+
+.planRadio__titleBold {
+  margin-top: -4px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.planRadio__titleSub {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.planRadio__title {
+  color: #ffffff;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Login__Screen > form > button {
+  padding: 16px 20px;
+  font-size: 1rem;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: #e50914;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.login__Screen__link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

@@ -1,0 +1,148 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 54;
+
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.nav__black {
+  background-color: black;
+}
+
+.nav__content {
+  display: flex;
+  justify-content: center;
+}
+
+.navbarlist {
+  position: fixed;
+  top: 20px;
+  left: 80px;
+  list-style: none;
+  display: flex;
+}
+
+.navbarlistRight {
+  position: fixed;
+  top: 22px;
+  right: 70px;
+  list-style: none;
+  display: flex;
+}
+
+.nav__linkIcons {
+  font-size: 10;
+}
+
+.navbar__links {
+  margin: 0 8px;
+  font-size: 10px;
+}
+
+.navbar__links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav__logo {
+  position: fixed;
+  left: 20px;
+  top: 18px;
+  width: 80px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.nav__avatar {
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  top: 10px;
+  width: 40px;
+}
+
+.drop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+  color: #ffffff;
+  top: 14px;
+  margin-top: -5px;
+}
+
+.dropdown {
+  display: none;
+}
+
+@media only screen and (max-width: 590px) {
+  .nodropdown {
+    display: none;
+  }
+
+  .dropdown {
+    display: flex;
+  }
+
+  .navbarlist {
+    display: unset;
+  }
+
+  .nodropdown {
+    padding: 8px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+
+  .nodropdown:first-of-type {
+    border-radius: 8px 8px 0 0;
+  }
+
+  .nodropdown:last-of-type {
+    border-radius: 0 0 8px 8px;
+  }
+
+  .navbarlist:hover .navbar__links {
+    display: flex;
+  }
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 4px;
+  padding: 4px;
+  margin-top: -6px;
+}
+
+.searchOpen {
+  animation: searchOpen 350ms ease-in;
+}
+
+.searchClose input {
+  animation: searchClose 350ms ease-in;
+  display: none;
+}
+
+.search input {
+  background-color: transparent;
+  border: none;
+  outline-width: 0px;
+  color: #ffffff;
+}
+
+.searchOpen + .search input {
+  width: 100px;
+}
+
+.searchClose + .search input {
+  display: none;
+  width: 0px;
+}

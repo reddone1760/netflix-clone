@@ -1,0 +1,23 @@
+.acc__header {
+  background-color: #333333;
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+  margin-bottom: 6px;
+
+  display: flex;
+  justify-content: space-between;
+
+  cursor: pointer;
+}
+
+.acc__body {
+  width: 60%;
+  background-color: #333333;
+  margin: -5px auto 6px;
+  padding: 20px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.2em;
+}

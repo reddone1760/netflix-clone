@@ -1,0 +1,314 @@
+.profile {
+  height: 100vh;
+  color: #ffffff;
+  background-color: #111111;
+}
+
+.profile__Body {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 8%;
+  max-width: 800px;
+}
+
+.profile__info {
+  display: flex;
+}
+
+.profile__Body h1 {
+  font-size: 60px;
+  font-weight: 400;
+  border-bottom: 1px solid #282c2d;
+  margin-bottom: 20px;
+}
+
+.profile__info img {
+  height: 100px;
+}
+
+.profile__details {
+  color: #ffffff;
+  flex: 1;
+}
+
+.profile__userPrev {
+  display: flex;
+  justify-content: center;
+}
+
+.profile__userPrevInfo {
+  width: auto;
+}
+
+@media only screen and (max-width: 620px) {
+}
+
+.profile__details h2 {
+  width: 100%;
+  line-height: 25%;
+  background-color: grey;
+  padding: 15px;
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+.profile__logout {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-top: 5%;
+  width: 100%;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #e50914;
+}
+
+.editbtn__section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.editbtn__section button {
+  padding: 10px 30px;
+  width: max-content;
+  font-size: 1rem;
+  border: none;
+  margin: 5%;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: rgba(131, 130, 130, 0.45);
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.editbtn__section button span {
+  margin-left: 8px;
+}
+
+.profile__plans {
+  margin-top: 20px;
+}
+
+.profile__plans h3 {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #282c2d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile__plans h4 {
+  margin-top: 4px;
+  width: 100%;
+}
+.plan {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+  transition: background-color 300ms ease-in;
+}
+
+.plan:hover {
+  background-color: rgba(131, 130, 130, 0.45);
+}
+
+.plan__title {
+  color: #ffffff;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub {
+  border: none;
+  border-radius: 2px;
+  background-color: #e50914;
+  color: #ffffff;
+  padding: 0 1.25rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.nosub {
+  border: none;
+  border-radius: 2px;
+  background-color: gray;
+  color: #ffffff;
+  padding: 0 1.25rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.profiles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.profile__user {
+  margin: 12px;
+  width: 70px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.profile__user:hover img {
+  border: #ffffff 2px solid;
+}
+
+.profile__user:hover h4 {
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.profile__user img {
+  box-sizing: border-box;
+  width: 70px;
+  height: 70px;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+.profile__user div {
+  margin: auto;
+  width: 90%;
+  background-color: rgba(131, 130, 130, 0.35);
+  border-radius: 8px;
+  height: 70%;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 300ms ease-in;
+}
+
+.addUser {
+  background-color: rgba(153, 146, 146, 0);
+  transition: all 300ms ease-in;
+  border-radius: 8px;
+  cursor: pointer;
+
+  margin: 12px;
+  min-width: 80px;
+  cursor: pointer;
+}
+
+.addUser:hover {
+  background-color: rgba(131, 130, 130, 0.45);
+}
+
+.addUser:hover div {
+  background-color: rgba(131, 130, 130, 0);
+}
+
+.profile__user h3 {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.profile__user h3:hover {
+  font-weight: 600;
+}
+
+.addProfile-Model {
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+.close__btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.addProfile__Container > h3 {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.addProfile__Container {
+  max-width: 650px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.addProfile__Container > h2 {
+  margin-bottom: 8px;
+}
+
+.addProfile__Container > h3 {
+  text-align: left;
+  margin-bottom: 30px;
+  margin-top: 8px;
+}
+
+.addProfile__Container > input {
+  outline-width: 0;
+  height: 40px;
+  margin-bottom: 14px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 15px;
+}
+
+.addProfile__Container > button {
+  padding: 16px 20px;
+  font-size: 1rem;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: #e50914;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.addPictures__Container {
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.addPictures__Container img {
+  cursor: pointer;
+  width: 70px;
+  object-fit: contain;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.addPictures__Container img:hover,
+.addPictures__active {
+  border: 2px #ffffff solid;
+}
+
+.displayNone {
+  display: none;
+}
